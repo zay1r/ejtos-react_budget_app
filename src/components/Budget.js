@@ -7,7 +7,18 @@ import {AppContext} from '../context/AppContext'
     return(
 
         <div className = 'alert alert-secondary'>
-            <span>Budget: £{budget}</span>
+            <label>Budget $</label>
+
+            <input  
+            
+                        value={budget}
+                        required='required'
+                        type='number'
+                        step='10'
+                       
+                        style={{ marginLeft: '2rem' , size: 10}}
+                        >
+                        </input>
         </div>
     );
 
